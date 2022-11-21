@@ -1,2 +1,2 @@
-# leetcode_streak
-Challenge - to practice question daily
+# Leetcode_streak⚡
+<br><b>⭐Challenge - to practice question daily
