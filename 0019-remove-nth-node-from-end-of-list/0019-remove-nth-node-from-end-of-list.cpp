@@ -13,7 +13,7 @@ public:
     // ListNode* reversell(ListNode*head){
     //     ListNode* prev=NULL;
     //     ListNode* curr=head;
-    //     ListNode* frwd=head;
+    //     ListNode* frwd=head; 
     //     while(curr!=NULL){
     //         frwd=curr->next;
     //         curr->next=prev;
@@ -24,7 +24,7 @@ public:
     // }
     ListNode* removeNthFromEnd(ListNode* head, int n) {
         // if(head==NULL){
-        //     return NULL;
+        //     return NULL;        // First approach
         // }
         // if(head->next==NULL && n>=1){
         //     return NULL;
@@ -43,7 +43,7 @@ public:
         // nhead=reversell(nhead);
         // return nhead;
         
-        ListNode* iter = head;
+        ListNode* iter = head;           // second approach
         int len = 0, i = 1;
         while(iter) iter = iter -> next, len++;    // finding the length of linked list
         if(len == n) return head -> next;          // if head itself is to be deleted, just
