@@ -7,7 +7,7 @@ public:
             start=arr.size()-i;
             end=i+1;
             total=start*end;
-            odd=(total+1)/2;
+            odd=(total+1)/2;                   //approach 1
             sum=sum+(odd*arr[i]);
         }
         return sum;
@@ -15,7 +15,9 @@ public:
 };
 
 
-// class Solution {
+//approach 2 - same as above but done in a more efficient way
+
+// class Solution {         
 // public:
 //     int sumOddLengthSubarrays(vector<int>& arr) {
 //         int ans = 0,n=arr.size(),i;
@@ -27,3 +29,6 @@ public:
 //         return ans;
 //     }
 // };
+
+
+// ref video - https://www.youtube.com/watch?v=J5IIH35EBVE
