@@ -22,10 +22,9 @@ public:
         while(nnext!=NULL && prev->next!=NULL){
             nnext=prev->next;
             if(nnext->val==prev->val){
-                ListNode* to_be_deleted=prev->next;
                 prev->next=prev->next->next;
+                delete nnext;
                 nnext=prev->next;
-                delete to_be_deleted;
                 continue;
             }
             prev=nnext;
