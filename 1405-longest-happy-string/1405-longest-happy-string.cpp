@@ -4,7 +4,7 @@ public:
         string ans="";
         priority_queue<pair<int,char>>pq;
         pq.push({a,'a'}); pq.push({b,'b'}); pq.push({c,'c'});
-        while(pq.size()>1)
+        while(pq.size()>1)                                                          //check
         {
             int a=pq.top().first;
             char c1=pq.top().second;  pq.pop();
